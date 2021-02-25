@@ -30,4 +30,7 @@ window.editor_toolbar = 'undo redo | formatselect | bold italic backcolor | \
                          bullist numlist outdent indent | removeformat | help';
 /* Vue End Editor */
 
+
+
+window.api_token = "$2y$10$8lkX6uwEJqHat64SIFmsL.SJClPOf7rJhIxVsmjOSpdgsIPFUSXz.";
 export default []

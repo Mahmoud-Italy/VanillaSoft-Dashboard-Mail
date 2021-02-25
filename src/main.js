@@ -5,7 +5,7 @@ import utils from '@/utils'
 import { i18n } from '@/translation'
 
 // baseURL
-window.baseURL = 'http://localhost:8000/v1';
+window.baseURL = 'http://localhost:8002/v1';
 Vue.config.productionTip = false
 
 new Vue({

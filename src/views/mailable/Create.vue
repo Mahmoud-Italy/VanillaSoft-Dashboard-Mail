@@ -200,6 +200,8 @@ export default {
             options: [],
             loading: false,
 
+            api_token: window.api_token,
+
             // editor
             editor: {
                 api_key: window.editor_apiKey,
@@ -240,7 +242,9 @@ export default {
                     body: this.row.body,
 
                     attachments: this.row.attachments,
-                }
+                    api_token: this.api_token
+                },
+                
             }
             this.axios(options)
             .then(() => {

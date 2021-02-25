@@ -44,6 +44,7 @@ export default {
             //
             pgLoading: false,
             items: [],
+            api_token: window.api_token
         }
     },
     mounted() {},
@@ -61,7 +62,10 @@ export default {
             const options = {
                 url: window.baseURL+'/inbox',
                 method: 'GET',
-                data: {}
+                data: {},
+                params: {
+                    api_token: this.api_token
+                }
             }
             this.axios(options)
             .then(res => {
@@ -86,7 +90,10 @@ export default {
             const options = {
                 url: window.baseURL+'/inbox/'+id,
                 method: 'DELETE',
-                data: {}
+                data: {},
+                params: {
+                    api_token: this.api_token
+                }
             }
             this.axios(options)
             .then(() => {
